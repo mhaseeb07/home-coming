@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: Poppins-Light;
+    src: url('../fonts/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/Poppins-SemiBold.ttf');
+}
+body {
+    font-size: .875rem;
+    font-family: Poppins-Regular;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+/*Sidebar*/
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #007771;
+    color: #fff;
+    transition: all 0.3s;
+    padding: 1rem 0 1rem 1rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.sidebar.active {
+    margin-left: -250px;
+}
+.sidebar::-webkit-scrollbar{
+    width:5px
+}
+.sidebar::-webkit-scrollbar-track{
+    background:#0e9992
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ddd
+}
+.sidebar::-webkit-scrollbar-thumb:hover{
+    background:#555
+}
+.sidebar-menu a:focus,
+.sidebar-menu a:hover,
+.sidebar-menu a{
+    color: #ffffff;
+}
+.sidebar .dropdown-menu{
+    position: relative !important;
+    transform: unset !important;
+    border: 0;
+    background-color: transparent;
+    font-family: Poppins-Regular;
+}
+.sidebar .dropdown-item,
+.sidebar .dropdown-item:hover,
+.sidebar .dropdown-item:focus{
+    background-color: transparent;
+    font-size: .8rem;
+}
+.sidebar .dropdown-menu .fa{
+    color: #ef5f3c;
+}
+/*Content*/
+.content {
+    width: 100%;
+    height: 100vh;
+    transition: all 0.3s;
+    overflow-y: scroll;
+}
+.header-bg{
+    background: #0e9992;
+}
+.header-bg a:hover,
+.header-bg a{
+    color: #ffffff;
+}
+.display-off{
+    display: none;
+}
+.final-summary-btn{
+    margin-top: 1.75rem;
+}
+.top-Panding-col{
+    padding-top: 10px;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+    .sidebar.active {
+        margin-left: 0;
+    }
+}
+
+.Non-Active{
+    border: 1px solid #fff;
+    background: #dc3545;
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.Active{
+    border: 1px solid #fff;
+    background: #007771;
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.Non-Active:hover{
+    border: 1px solid #fff;
+    background: #dc3545;
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.Active:hover{
+    border: 1px solid #fff;
+    background: #007771;
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
